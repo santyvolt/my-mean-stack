@@ -9,3 +9,5 @@ app.get('/', function (req, res) {
 app.listen(3000, function () {
     console.log('Listening to 3000');
 });
+
+console.log('dd');
