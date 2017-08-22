@@ -1,0 +1,14 @@
+html
+	head
+		title VOLT - Version #{version}
+		link(rel='stylesheet',href='/lib/bootstrap.min.css')
+		link(rel='stylesheet',href='/lib/font-awesome.min.css')
+		link(rel='stylesheet',href='/lib/superhero.bootstrap.min.css')
+		link(rel='stylesheet',href='/lib/ngDialog.min.css')
+		link(rel='stylesheet',href='/css/app#{minified}.css?#{version}')
+		script(src='/lib/jquery.min.js')
+		script(src='/lib/bootstrap.min.js')
+		script(src='/lib/angular.min.js')
+		script(src='/lib/ngDialog.min.js')
+	body(ng-Controller="appCtrl",ng-init="init()",id="elementToShare",class="container-fluid body-class")
+		ng-view
